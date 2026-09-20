@@ -1,0 +1,42 @@
+{
+  "name": "bestrobotmower-mcp",
+  "version": "1.0.0",
+  "description": "Model Context Protocol server for robot lawn mower specs, prices, scores and buying recommendations, powered by the open BestRobotMower.co dataset (23 wire-free and RTK models, CC BY 4.0).",
+  "type": "module",
+  "bin": {
+    "bestrobotmower-mcp": "index.js"
+  },
+  "main": "index.js",
+  "files": [
+    "index.js",
+    "data/mowers.json",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "robot-lawn-mower",
+    "robot-mower",
+    "lawn-mower",
+    "comparison",
+    "dataset",
+    "e-commerce"
+  ],
+  "author": "BestRobotMower.co",
+  "license": "MIT",
+  "homepage": "https://bestrobotmower.co/dataset",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yumaheymans/bestrobotmower-mcp.git"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.30.0"
+  }
+}
