@@ -15,6 +15,26 @@ It is powered by the open **[BestRobotMower.co dataset](https://bestrobotmower.c
 
 Example questions your assistant can now answer: "What is the best robot mower under $1500 for a 700 m2 lawn?", "Compare the Husqvarna Automower 450X and the Segway Navimow i105E", "Which RTK mowers handle a 40% slope?"
 
+## Hosted endpoint (no install)
+
+The server also runs as a hosted, remote MCP server, so clients that support remote MCP over Streamable HTTP can connect with nothing to install:
+
+```
+https://bestrobotmower.co/api/mcp
+```
+
+It is listed in the [Official MCP Registry](https://registry.modelcontextprotocol.io) as `io.github.yumaheymans/bestrobotmower-mcp`. Example client config:
+
+```json
+{
+  "mcpServers": {
+    "bestrobotmower": { "url": "https://bestrobotmower.co/api/mcp" }
+  }
+}
+```
+
+Prefer to run it locally instead (or use a client without remote support)? Use the stdio install below.
+
 ## Install
 
 No API key required. Requires Node.js 18+.
